@@ -1,0 +1,8 @@
+
+code/\.Rhistory
+
+*.html
+
+intermediate/
+
+*.dcf

@@ -1,0 +1,97 @@
+book,category,account
+Revenues,Revenues,40010
+Revenues,Revenues,41010
+Revenues,Revenues,41060
+Revenues,Revenues,41070
+Revenues,Revenues,41080
+Revenues,Revenues,42010
+Revenues,Revenues,42015
+Revenues,Revenues,42017
+Revenues,Revenues,42080
+Revenues,Revenues,15200
+Operating expenses,Professional Services,50020
+Operating expenses,Professional Services,50050
+Operating expenses,Professional Services,50100
+Operating expenses,Professional Services,50110
+Operating expenses,Professional Services,50120
+Operating expenses,Professional Services,50130
+Operating expenses,Professional Services,50140
+Operating expenses,Professional Services,50150
+Operating expenses,Administrative Expenses,50210
+Operating expenses,Administrative Expenses,50220
+Operating expenses,Administrative Expenses,50230
+Operating expenses,Administrative Expenses,50250
+Operating expenses,Administrative Expenses,50270
+Operating expenses,Administrative Expenses,50300
+Operating expenses,Administrative Expenses,50305
+Operating expenses,Administrative Expenses,50360
+Operating expenses,Administrative Expenses,50380
+Operating expenses,Payroll Expenses,51010
+Operating expenses,Payroll Expenses,51020
+Operating expenses,Payroll Expenses,51030
+Operating expenses,Payroll Expenses,51040
+Operating expenses,Payroll Expenses,51050
+Operating expenses,Payroll Expenses,51060
+Operating expenses,Payroll Expenses,51070
+Operating expenses,Payroll Expenses,51080
+Operating expenses,Payroll Expenses,51090
+Operating expenses,Payroll Expenses,51110
+Operating expenses,Utility Expenses,52010
+Operating expenses,Utility Expenses,52030
+Operating expenses,Utility Expenses,52035
+Operating expenses,Utility Expenses,52036
+Operating expenses,Utility Expenses,52050
+Operating expenses,Contract Services,53010
+Operating expenses,Contract Services,53020
+Operating expenses,Contract Services,53022
+Operating expenses,Contract Services,53030
+Operating expenses,Contract Services,53037
+Operating expenses,Contract Services,53040
+Operating expenses,Contract Services,53070
+Operating expenses,Contract Services,53075
+Operating expenses,Contract Services,53092
+Operating expenses,"Inspection, License, Permits",54050
+Operating expenses,Depletable Supplies,55010
+Operating expenses,Depletable Supplies,55020
+Operating expenses,Depletable Supplies,55030
+Operating expenses,Depletable Supplies,55035
+Operating expenses,Depletable Supplies,55040
+Operating expenses,Depletable Supplies,55055
+Operating expenses,Building Systems,56020
+Operating expenses,Building Systems,56040
+Operating expenses,Building Systems,56042
+Operating expenses,Repair & Maintenance,57010
+Operating expenses,Repair & Maintenance,57040
+Operating expenses,Repair & Maintenance,57050
+Operating expenses,Repair & Maintenance,57060
+Operating expenses,Repair & Maintenance,57065
+Operating expenses,Repair & Maintenance,57080
+Operating expenses,Repair & Maintenance,57120
+Operating expenses,Repair & Maintenance,57162
+Operating expenses,Repair & Maintenance,57165
+Operating expenses,Repair & Maintenance,57170
+Operating expenses,Repair & Maintenance,57195
+Operating expenses,Repair & Maintenance,57200
+Operating expenses,Tax Expense,59020
+Operating expenses,Other Operating Expenses,59540
+Operating expenses,Other Operating Expenses,59999
+Operating expenses,Transfer,49010
+Operating expenses,Transfer,49110
+Checking / Savings,Union Bank Operating #8131,11011
+Checking / Savings,UB OP CD Plus 3-mo mature 11/01/16,11020
+Accounts Receivable,Assessments Receivable,13010
+Accounts Receivable,Water Reimbursement Receivable,13065
+Other Current Assets,Allowance for Doubtful Accounts,14010
+Other Current Assets,Prepaid Taxes - Federal,15060
+Other Current Assets,Key Fobs,15125
+Other Current Assets,Parking Validation,15200
+Other Current Assets,Emerg Repair-Museum Parc HOA,17000MK
+Accounts Payable,Accounts Payable,21010
+Other Current Liabilities,Accrued Gas,22030
+Other Current Liabilities,Accrued Water,22050
+Other Current Liabilities,Accrued Telephone,22070
+Other Current Liabilities,Accrued Security,22095
+Other Current Liabilities,Accrue Payroll & Benefits,22120
+Other Current Liabilities,Prepaid Assessments,22160
+Equity,Operating Fund Equity-Beg Balance,30010
+Equity,Prior Year- Addt'l Transfer,30040
