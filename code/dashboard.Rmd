@@ -1,0 +1,95 @@
+---
+title: "Museum Parc Financial Analysis"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    vertical_layout: scroll
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(assertive)
+library(dplyr)
+library(ggplot2)
+library(knitr)
+library(lubridate)
+library(readxl)
+library(stringr)
+library(zoo)
+load("../intermediate/cleaned.RData")
+source("functions_figures.R")
+source("figures.R")
+```
+
+
+Operating expenses
+===================================== 
+
+Column {.sidebar}
+-----------------------------------------------------------------------
+
+Choose a category and account for further investigation
+
+```{r}
+CATEGORY <- "Repair & Maintenance"
+ACCOUNT <- "Lighting & Light Bulb Replacement R&M"
+```
+
+
+Column
+-----------------------------------------------------------------------
+
+### Year-to-date spending by category
+
+```{r, fig.width = 6, height = 4}
+fig_cat_ytd
+```
+
+> Bars are shaded based on ratio of YTD spending to YTD budget. + indicates 2016 spending over the same period.
+
+
+### Year-to-date spending by account
+
+```{r}
+  PlotAccountsYTD(CATEGORY)
+```
+
+> Bars are shaded based on ratio of YTD spending to YTD budget. + indicates 2016 spending over the same period.
+
+
+Column
+-----------------------------------------------------------------------
+### Category spending by month
+
+```{r}
+  PlotCategoryByMonth(CATEGORY)
+```
+
+> Red line indicates monthly budget. + indicates 2016 spending over the same period.
+
+### Account spending by month
+
+```{r}
+PlotAccountByMonth(ACCOUNT)
+```
+
+> Red line indicates monthly budget. + indicates 2016 spending over the same period.
+
+Column
+-----------------------------------------------------------------------
+
+### Accounts more than 20% over budget YTD
+
+```{r}
+accounts_ytd %>% filter(spend_ratio > 1.1 & budget_2017_ytd > 500) %>%
+  arrange(desc(spend_2017_ytd - budget_2017_ytd)) %>% ungroup() %>%
+  select(category, account_name, budget_2017_ytd, spend_2017_ytd, spend_2016_ytd) %>%
+  kable(col.names = c("Category", "Account", "Budget YTD", "Spend YTD", "2016 TD"),
+        digits = 0, align = "r", format.args = list(big.mark = ","))
+```
+
+> Limited to accounts with more than $500 spent YTD. Sorted in decreasing order of amount over budget.
+
+Payees
+=====================================
+

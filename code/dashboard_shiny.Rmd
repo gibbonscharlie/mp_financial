@@ -1,0 +1,67 @@
+---
+title: "Museum Parc Financial Analysis"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    vertical_layout: fill
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+load("../intermediate/cleaned.RData")
+source("functions_figures.R")
+```
+
+
+Column {.sidebar}
+-----------------------------------------------------------------------
+
+Choose a category and account for further investigation
+
+```{r}
+selectInput("category", label = "Category:",
+            choices = sort(unique(accounts$category)), selected = "Repair & Maintenance")
+
+selectInput("account", label = "Account:",
+            choices = sort(unique(accounts$account_name[accounts$category == input$category])))
+```
+
+
+Column {data-width=500}
+-----------------------------------------------------------------------
+
+### Year-to-date spending by category
+
+```{r}
+fig_cat_ytd
+```
+Bars are shaded based on ratio of YTD spending to YTD budget. + indicates 2016 spending over the same period.
+
+
+### Chart B
+
+```{r}
+CATEGORY <- input$category
+renderPlot({
+  PlotAccountsYTD(CATEGORY)
+})
+```
+
+Column {data-width=500}
+-----------------------------------------------------------------------
+### Chart C
+
+```{r}
+renderPlot({
+  PlotCategoryByMonth(CATEGORY)
+})
+```
+
+### Chart D
+
+```{r}
+ACCOUNT <- input$account
+renderPlot({PlotAccountByMonth(ACCOUNT)
+})
+```
